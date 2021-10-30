@@ -16,6 +16,12 @@
   bottom: -45vh;
 }
 
+.weatherBox.cold {
+  background-color: #e1eff4;
+  border: 1px solid rgba(217, 236, 242, 0.7);
+  box-shadow: inset -5px -5px 5px #e5f2f5, inset 5px 5px 6px #cad5d8;
+}
+
 .temp,
 .weather,
 span {

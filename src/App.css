@@ -1,17 +1,5 @@
 /*-----Mis estilos------*/
 
-@keyframes bgAnim {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .main {
   background-image: url(../src/assets/sun.png);
   background-position: center;

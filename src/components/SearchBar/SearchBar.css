@@ -25,4 +25,17 @@
 
 .searchBox .searchBar:focus {
   background-color: #f8f7f1;
+  outline: none;
+  caret-color: salmon;
+}
+
+.searchBar.cold {
+  background-color: #e1eff4;
+  border: 1px solid rgba(217, 236, 242, 0.7);
+  box-shadow: inset -5px -5px 5px #e5f2f5, inset 5px 5px 6px #cad5d8;
+}
+
+.searchBox .cold:focus {
+  background-color: #f1f7f8;
+  caret-color: steelblue;
 }

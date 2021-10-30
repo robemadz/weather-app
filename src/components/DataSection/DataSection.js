@@ -1,7 +1,7 @@
 import React from "react";
 import "./DataSection.css";
 
-export default function DataSection() {
+function DataSection(props) {
   const dateBuilder = (d) => {
     let months = [
       "January",
@@ -35,13 +35,24 @@ export default function DataSection() {
     return `${day}, ${date} ${month} ${year}`;
   };
   return (
-    <section className="dataBox">
+    <section
+      className={
+        typeof props.weather.main != "undefined"
+          ? props.weather.main.temp < 16
+            ? "dataBox cold"
+            : "dataBox"
+          : "dataBox"
+      }
+    >
       <div className="dateBox">{dateBuilder(new Date())}</div>
       <div className="locationBox">
         <h2 className="city">
-          New York <span className="country">USA</span>
+          {props.weather.name}
+          <span className="country">{props.weather.sys.country}</span>
         </h2>
       </div>
     </section>
   );
 }
+
+export default DataSection;
