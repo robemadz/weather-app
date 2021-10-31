@@ -1,5 +1,6 @@
 import React from "react";
 import "./SearchBar.css";
+import searchicon from "../../assets/searchicon.png";
 
 export default function SearchBar(props) {
   return (
@@ -18,6 +19,8 @@ export default function SearchBar(props) {
         value={props.location}
         onKeyPress={props.search}
       />
+
+      <img className="searchIcon" src={searchicon} alt="search icon" />
     </section>
   );
 }

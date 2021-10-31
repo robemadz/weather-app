@@ -7,6 +7,14 @@
 .searchBox {
   width: 100%;
   margin-bottom: 1rem;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 1rem;
 }
 
 .searchBar {
