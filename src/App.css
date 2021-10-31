@@ -1,4 +1,7 @@
 /*-----Mis estilos------*/
+body {
+  background-color: #fafafa;
+}
 
 .main {
   background-image: url(../src/assets/sun.png);
@@ -8,6 +11,8 @@
   position: relative;
 
   width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
   min-height: 100vh;
   padding: 1.5rem;
   transition: 0.4s ease-out;
