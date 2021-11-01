@@ -1,0 +1,28 @@
+/*
+ * WarmImg css File
+*/
+
+@keyframes animIcon {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.disabled {
+  display: none;
+}
+
+.warm.warmImg {
+  display: block;
+}
+
+.warmImg {
+  margin: 3rem auto;
+  animation: animIcon 3s ease-in-out infinite both;
+}

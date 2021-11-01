@@ -3,6 +3,8 @@ import "./App.css";
 import SearchBar from "./components/SearchBar/SearchBar";
 import DataSection from "./components/DataSection/DataSection";
 import WeatherData from "./components/WeatherData/WeatherData";
+import WarmImg from "./components/WarmImg/WarmImg";
+import ColdImg from "./components/ColdImg/ColdImg";
 
 function App() {
   const [location, setLocation] = useState("");
@@ -40,7 +42,7 @@ function App() {
         typeof weather.main != "undefined"
           ? weather.main.temp < 16
             ? "main cold"
-            : "main"
+            : "main warm"
           : "main"
       }
     >
@@ -51,9 +53,12 @@ function App() {
         setLocation={setLocation}
         weather={weather}
       />
+
       {typeof weather.main != "undefined" ? (
         <>
           <DataSection weather={weather} />
+          <WarmImg weather={weather} />
+          <ColdImg weather={weather} />
           <WeatherData weather={weather} />
         </>
       ) : (

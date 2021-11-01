@@ -12,8 +12,6 @@
   border: 1px solid rgba(242, 238, 217, 0.7);
   background-color: #f4f1e1;
   box-shadow: inset -5px -5px 5px #f5f3e5, inset 5px 5px 6px #d8d7ca;
-  position: relative;
-  bottom: -45vh;
 }
 
 .weatherBox.cold {
