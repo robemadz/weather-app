@@ -10,11 +10,14 @@
   position: relative;
 }
 
-.searchIcon {
+.searchBtn {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
   right: 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .searchBar {

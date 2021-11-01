@@ -22,6 +22,18 @@ function App() {
     }
   };
 
+  const searchBtn = () => {
+    fetch(
+      `${process.env.REACT_APP_BASE_URL}weather?q=${location}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`
+    )
+      .then((res) => res.json())
+      .then((result) => {
+        setWeather(result);
+        console.log(result);
+        setLocation("");
+      });
+  };
+
   return (
     <main
       className={
@@ -33,6 +45,7 @@ function App() {
       }
     >
       <SearchBar
+        searchBtn={searchBtn}
         search={search}
         location={location}
         setLocation={setLocation}

@@ -20,7 +20,13 @@ export default function SearchBar(props) {
         onKeyPress={props.search}
       />
 
-      <img className="searchIcon" src={searchicon} alt="search icon" />
+      <button
+        className="searchBtn"
+        onChange={(e) => props.setLocation(e.target.value)}
+        onClick={props.searchBtn}
+      >
+        <img className="searchIcon" src={searchicon} alt="search icon" />
+      </button>
     </section>
   );
 }
